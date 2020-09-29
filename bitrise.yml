@@ -122,6 +122,9 @@ workflows:
     - script@1:
         title: Do anything with Script step
     - yarn@0:
+      inputs:
+        - command: test
+    - yarn@0:
         inputs:
         - command: install
     - install-missing-android-tools@2:
